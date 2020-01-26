@@ -1,0 +1,70 @@
+
+
+.menu-box {
+  position: relative;
+  z-index: 1;
+
+  .menu {
+    background: $c-black;
+    border-radius: 5px;
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+
+        a {
+
+        }
+      }
+    }
+
+    .box-search {
+      position: relative;
+    }
+
+    .menu-search {
+      border-radius: 5px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      outline: none;
+      color: $c-black;
+      width: 100%;
+      border: 0;
+    }
+
+    .search-ico {
+      cursor: pointer;
+      position: absolute;
+      left: 15px;
+      top: 3px;
+    }
+
+    .search-close {
+      cursor: pointer;
+      position: absolute;
+      right: 15px;
+      top: 3px;
+      transition: all .3s ease-in-out;
+
+      &:hover {
+        color: $c-red;
+      }
+    }
+
+  }
+}
+
+.menu-box-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #373334;
+  z-index: 1;
+  background: $c-black;
+}
+

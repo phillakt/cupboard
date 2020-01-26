@@ -1,0 +1,30 @@
+
+.title {
+  margin: 0;
+
+  &__h1 {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  &__h2 {
+    font-size: 24px;
+
+    &_bold {
+      font-weight: 700;
+    }
+  }
+
+  &__h3 {
+    font-size: 18px;
+  }
+
+  &__h4 {
+    font-size: 14px;
+  }
+
+  &__h5 {
+    font-size: 12px;
+  }
+}

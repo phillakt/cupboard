@@ -1,0 +1,33 @@
+
+.ui__input {
+  font-size: 14px;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid $c-cream;
+  background: $c-white;
+
+  &:hover, &:focus {
+    outline: none;
+  }
+}
+
+.ui__dropdown {
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid $c-cream;
+  width: 100%;
+  background: $c-white;
+
+  &:hover, &:focus {
+    outline: none;
+  }
+}
+
+.dropdown-menu {
+  padding: 0;
+}
+
+.dropdown-menu {
+  width: 220px;
+}

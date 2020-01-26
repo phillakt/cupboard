@@ -1,0 +1,17 @@
+
+.catalog {
+
+
+  &__footer {
+
+    img {
+
+      @media (max-width: 991px) and (min-width: 769px) {
+        width: 30px !important;
+      }
+      @media (max-width: 768px) and (min-width: 360px) {
+        width: 30px !important;
+      }
+    }
+  }
+}

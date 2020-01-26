@@ -1,0 +1,30 @@
+
+.box-height {
+  width: 100%;
+  border: 6px solid transparent;
+  //box-sizing: content-box;
+
+  &__500 {
+    height: 540px;
+    background-size: cover !important;
+
+    @media (max-width: 991px) and (min-width: 769px) {
+      height: calc(300px / 2) !important;
+    }
+    @media (max-width: 768px) and (min-width: 360px) {
+      height: calc(300px / 3) !important;
+    }
+  }
+
+  &__200 {
+    height: 260px;
+    background-size: cover !important;
+
+    @media (max-width: 991px) and (min-width: 769px) {
+      height: calc(300px / 2) !important;
+    }
+    @media (max-width: 768px) and (min-width: 360px) {
+      height: calc(300px / 3) !important;
+    }
+  }
+}
