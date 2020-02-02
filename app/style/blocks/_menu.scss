@@ -1,12 +1,125 @@
 
+.menu-sticky {
+  background: $c-black;
+  position: fixed !important;
+  top: -70px;
+  left: 0;
+  right: 0;
+  border-radius: 0;
+  transition: all 0.3s !important;
+  justify-content: space-around;
+  z-index: 10 !important;
+
+  @media (max-width: 992px) and (min-width: 360px) {
+    top: 0;
+    width: 320px;
+    height: 100vh;
+    overflow-y: scroll;
+  }
+
+  .logo {
+    display: none;
+
+    @media (max-width: 992px) and (min-width: 360px) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .menu {
+    border-radius: 0 !important;
+
+    @media (max-width: 992px) and (min-width: 360px) {
+      display: flex;
+      margin-top: 30px;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .search-ico {
+      @media (max-width: 992px) and (min-width: 360px) {
+        left: 0 !important;
+        padding-top: 2px !important;
+      }
+    }
+  }
+
+  .fjc-sb.fai-c {
+    @media (max-width: 992px) and (min-width: 360px) {
+      align-items: flex-start;
+      margin-top: 30px;
+    }
+
+  }
+
+  .icon-search {
+    @media (max-width: 992px) and (min-width: 360px) {
+      display: flex;
+      margin-bottom: 30px;
+    }
+  }
+
+  .fai-c {
+    @media (max-width: 992px) and (min-width: 360px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .submenu {
+
+      @media (max-width: 992px) and (min-width: 360px) {
+        background: #2b2829 !important;
+        top: 30px !important;
+      }
+    }
+
+  }
+
+  li.mr-40 {
+
+    @media (max-width: 992px) and (min-width: 360px) {
+      margin-bottom: 15px;
+    }
+  }
+
+  .box-search {
+    @media (max-width: 992px) and (min-width: 360px) {
+      bottom: 65px;
+    }
+  }
+
+  .menu-search {
+    @media (max-width: 992px) and (min-width: 360px) {
+      padding-left: 30px !important;
+    }
+  }
+
+}
+
+.menu-sticky-view {
+  top: 0;
+}
 
 .menu-box {
+  @media (max-width: 992px) and (min-width: 360px) {
+    display: none;
+  }
+}
+
+.menu-sticky, .menu-box {
   position: relative;
   z-index: 1;
 
   .menu {
     background: $c-black;
     border-radius: 5px;
+    transition: all 0.3s !important;
+
+    @media (max-width: 992px) and (min-width: 360px) {
+
+      //display: none;
+
+    }
 
     ul {
       list-style: none;
@@ -22,7 +135,11 @@
     }
 
     .box-search {
-      position: relative;
+      position: absolute;
+      right: 30px;
+      visibility: visible;
+      opacity: 1;
+      transition: all 0.3s ease-in-out;
     }
 
     .menu-search {
@@ -32,7 +149,7 @@
       font-size: 14px;
       outline: none;
       color: $c-black;
-      width: 100%;
+      width: 260px;
       border: 0;
     }
 
@@ -40,7 +157,7 @@
       cursor: pointer;
       position: absolute;
       left: 15px;
-      top: 3px;
+      padding-top: 1px;
     }
 
     .search-close {
@@ -56,6 +173,7 @@
     }
 
   }
+
 }
 
 .menu-box-fixed {
@@ -68,3 +186,33 @@
   background: $c-black;
 }
 
+.menu-dropdown {
+  position: relative;
+}
+
+// Submenu
+.submenu {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  z-index: 10;
+  background: #373334;
+  width: 260px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.menu ul li:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+}
+
+.submenu a {
+  transition: all .3s ease-in-out;
+}
+
+.submenu a:hover {
+  color: #fff;
+  background: #D74339;
+}

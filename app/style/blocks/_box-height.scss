@@ -1,7 +1,7 @@
 
 .box-height {
   width: 100%;
-  border: 6px solid transparent;
+  //border: 6px solid transparent;
   //box-sizing: content-box;
 
   &__500 {
@@ -17,7 +17,7 @@
   }
 
   &__200 {
-    height: 260px;
+    height: 255px;
     background-size: cover !important;
 
     @media (max-width: 991px) and (min-width: 769px) {

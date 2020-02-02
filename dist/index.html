@@ -12,7 +12,79 @@
 </head>
 <body>
 
-<div id="app">
+<main id="app" class="app">
+
+    <section class="menu-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="logo fjc-c pt-30">
+                        <a href="#!"><img src="./img/logo/logo.svg" alt="logo"></a>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="menu fjc-sb pl-30 pr-30 pt-20 pb-20">
+                        <ul class="fai-c">
+                            <li class="mr-40">
+                                <a href="#!" class="link link-menu">Гланая</a>
+                            </li>
+                            <li class="menu-dropdown mr-40">
+                                <a href="#!" class="link link-menu link-menu__drop">Каталог</a>
+
+
+                                <ul class="submenu">
+                                    <li>
+                                        <a href="#!" class="fjc-s c-white fs-14 pt-10 pb-10 pl-20">Кухни</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="fjc-s c-white fs-14 pt-10 pb-10 pl-20">Межкомнатные перегородки</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="fjc-s c-white fs-14 pt-10 pb-10 pl-20">Гардеробные комнаты</a>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li class="mr-40">
+                                <a href="#!" class="link link-menu">О нас</a>
+                            </li>
+                            <li class="mr-40">
+                                <a href="#!" class="link link-menu">Акции</a>
+                            </li>
+                        </ul>
+
+
+                        <div class="fjc-sb fai-c">
+                            <div class="mr-30">
+                                <a href="#!" class="icon-search">
+                                    <img src="./img/menu/white/ico_search.svg" alt="ico_search">
+                                </a>
+                            </div>
+                            <a href="#!" class="fjc-sb">
+                                <div class="mr-20"><img src="./img/menu/white/ico_phone.svg" alt="ico_search"></div>
+                                <div class="c-white pt-5 fs-14">
+                                    +7 (000) 000 0000
+                                </div>
+                            </a>
+
+                        </div>
+
+
+                        <!-- Search form start -->
+                        <div class="box-search display-none">
+                            <label class="search-ico" for="menu-search-sticky"><img src="./img/menu/search.svg"
+                                                                             alt="search"></label>
+                            <input id="menu-search-sticky" class="menu-search pl-50 pr-10 pt-5 pb-5 " type="text"
+                                   placeholder="Поиск">
+                            <span class="search-close">×</span>
+                        </div>
+                        <!-- Search form end -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <header>
         <div class="container">
@@ -26,48 +98,81 @@
         </div>
     </header>
 
-
     <section class="main-slider">
         <div id="main-slider" class="owl-carousel owl-theme">
             <div class="item">
-                <div class="item__h500" style="background: url(./img/test-img.svg ) no-repeat;"></div>
+                <div class="item__h500" style="background: url(./img/main-slider/items/item-1.png) no-repeat;"></div>
             </div>
             <div class="item">
-                <div class="item__h500" style="background: url(./img/test-img.svg ) no-repeat;"></div>
+                <div class="item__h500" style="background: url(./img/main-slider/items/item-1.png) no-repeat;"></div>
             </div>
             <div class="item">
-                <div class="item__h500" style="background: url(./img/test-img.svg ) no-repeat;"></div>
+                <div class="item__h500" style="background: url(./img/main-slider/items/item-1.png) no-repeat;"></div>
             </div>
         </div>
     </section>
 
-    <section class="menu-box mt-20">
+    <section class="menu-box">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 offset-lg-1">
                     <div class="menu fjc-sb pl-30 pr-30 pt-20 pb-20">
                         <ul class="fai-c">
-                            <li>
-                                <a href="#!" class="link link-menu mr-40">Гланая</a>
+                            <li class="mr-40">
+                                <a href="#!" class="link link-menu">Гланая</a>
                             </li>
-                            <li>
-                                <a href="#!" class="link link-menu link-menu__drop mr-40">Каталог</a>
+                            <li class="menu-dropdown mr-40">
+                                <a href="#!" class="link link-menu link-menu__drop">Каталог</a>
+
+
+                                <ul class="submenu">
+                                    <li>
+                                        <a href="#!" class="fjc-s c-white fs-14 pt-10 pb-10 pl-20">Кухни</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="fjc-s c-white fs-14 pt-10 pb-10 pl-20">Межкомнатные перегородки</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="fjc-s c-white fs-14 pt-10 pb-10 pl-20">Гардеробные комнаты</a>
+                                    </li>
+                                </ul>
+
                             </li>
-                            <li>
-                                <a href="#!" class="link link-menu mr-40">О нас</a>
+                            <li class="mr-40">
+                                <a href="#!" class="link link-menu">О нас</a>
                             </li>
-                            <li>
-                                <a href="#!" class="link link-menu mr-40">Акции</a>
+                            <li class="mr-40">
+                                <a href="#!" class="link link-menu">Акции</a>
                             </li>
                         </ul>
 
-                        <div class="box-search">
+
+                        <div class="fjc-sb fai-c">
+                            <div class="mr-30">
+                                <a href="#!" class="icon-search">
+                                    <img src="./img/menu/white/ico_search.svg" alt="ico_search">
+                                </a>
+                            </div>
+                            <a href="#!" class="fjc-sb">
+                                <div class="mr-20"><img src="./img/menu/white/ico_phone.svg" alt="ico_search"></div>
+                                <div class="c-white pt-5 fs-14">
+                                    +7 (000) 000 0000
+                                </div>
+                            </a>
+
+                        </div>
+
+
+                        <!-- Search form start -->
+                        <div class="box-search display-none">
                             <label class="search-ico" for="menu-search"><img src="./img/menu/search.svg"
                                                                              alt="search"></label>
-                            <input id="menu-search" class="menu-search pl-50 pr-10 pt-5 pb-5" type="text"
+                            <input id="menu-search" class="menu-search pl-50 pr-10 pt-5 pb-5 " type="text"
                                    placeholder="Поиск">
                             <span class="search-close">×</span>
                         </div>
+                        <!-- Search form end -->
+
                     </div>
                 </div>
             </div>
@@ -80,11 +185,11 @@
                 <div class="col-lg-10 offset-lg-1">
                     <div class="row">
                         <div class="col-lg-6">
-                            <h1 class="title title__h1 c-red mt-60 mb-30">Каталог товаров</h1>
+                            <h1 class="title title__h1 c-red mt-60 mb-60">Каталог товаров</h1>
                         </div>
 
                         <div class="col-lg-3 offset-lg-3">
-                            <div class="button button__red fjc-c fai-c pt-10 pb-10 mt-60 mb-30">
+                            <div class="button button__red fjc-c fai-c pt-10 pb-10 mt-60 mb-60">
                                 В каталог
                             </div>
                         </div>
@@ -92,12 +197,10 @@
                 </div>
             </div>
 
-
             <div class="row">
-
                 <div class="col-lg-4 offset-lg-1">
-                    <div class="box-height box-height__500 ffd-column fjc-sb"
-                         style="background: url(./img/test-img.svg ) no-repeat;">
+                    <div class="box-height box-height__500 ffd-column fjc-sb mb-30"
+                         style="background: url(./img/catalog/items/1.png) no-repeat;">
                         <div class="catalog__header pt-30 pl-20">
                             <a href="#!" class="link link-catalog">Шкафы-купе</a>
                         </div>
@@ -112,8 +215,8 @@
                 <div class="col-lg-6">
                     <div class="row">
                         <div class="col-lg-6">
-                            <div class="box-height box-height__200 ffd-column fjc-sb"
-                                 style="background: url(./img/test-img.svg ) no-repeat;">
+                            <div class="box-height box-height__200 ffd-column fjc-sb mb-30"
+                                 style="background: url(./img/catalog/items/2.png ) no-repeat;">
                                 <div class="catalog__header pt-30 pl-20">
                                     <a href="#!" class="link link-catalog">Шкафы-купе</a>
                                 </div>
@@ -126,8 +229,8 @@
                         </div>
 
                         <div class="col-lg-6">
-                            <div class="box-height box-height__200 ffd-column fjc-sb"
-                                 style="background: url(./img/test-img.svg ) no-repeat;">
+                            <div class="box-height box-height__200 ffd-column fjc-sb mb-30"
+                                 style="background: url(./img/catalog/items/3.png ) no-repeat;">
                                 <div class="catalog__header pt-30 pl-20">
                                     <a href="#!" class="link link-catalog">Шкафы-купе</a>
                                 </div>
@@ -138,13 +241,12 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
 
-                    <div class="row mt-20">
+                    <div class="row">
                         <div class="col-lg-12">
-                            <div class="box-height box-height__200 ffd-column fjc-sb"
-                                 style="background: url(./img/test-img.svg ) no-repeat;">
+                            <div class="box-height box-height__200 ffd-column fjc-sb mb-30"
+                                 style="background: url(./img/catalog/items/4.png ) no-repeat;">
                                 <div class="catalog__header pt-30 pl-20">
                                     <a href="#!" class="link link-catalog">Шкафы-купе</a>
                                 </div>
@@ -157,15 +259,15 @@
                         </div>
                     </div>
                 </div>
-
             </div>
 
-            <div class="row mt-20">
+            <div class="row">
                 <div class="col-lg-6 offset-lg-1">
+
                     <div class="row">
                         <div class="col-lg-12">
-                            <div class="box-height box-height__200 ffd-column fjc-sb"
-                                 style="background: url(./img/test-img.svg ) no-repeat;">
+                            <div class="box-height box-height__200 ffd-column fjc-sb mb-30"
+                                 style="background: url(./img/catalog/items/5.png ) no-repeat;">
                                 <div class="catalog__header pt-30 pl-20">
                                     <a href="#!" class="link link-catalog">Шкафы-купе</a>
                                 </div>
@@ -178,10 +280,10 @@
                         </div>
                     </div>
 
-                    <div class="row mt-20">
+                    <div class="row">
                         <div class="col-lg-6">
-                            <div class="box-height box-height__200 ffd-column fjc-sb"
-                                 style="background: url(./img/test-img.svg ) no-repeat;">
+                            <div class="box-height box-height__200 ffd-column fjc-sb mb-30"
+                                 style="background: url(./img/catalog/items/7.png ) no-repeat;">
                                 <div class="catalog__header pt-30 pl-20">
                                     <a href="#!" class="link link-catalog">Шкафы-купе</a>
                                 </div>
@@ -194,8 +296,8 @@
                         </div>
 
                         <div class="col-lg-6">
-                            <div class="box-height box-height__200 ffd-column fjc-sb"
-                                 style="background: url(./img/test-img.svg ) no-repeat;">
+                            <div class="box-height box-height__200 ffd-column fjc-sb mb-30"
+                                 style="background: url(./img/catalog/items/8.png ) no-repeat;">
                                 <div class="catalog__header pt-30 pl-20">
                                     <a href="#!" class="link link-catalog">Шкафы-купе</a>
                                 </div>
@@ -212,8 +314,24 @@
                 </div>
 
                 <div class="col-lg-4">
-                    <div class="box-height box-height__500 ffd-column fjc-sb"
-                         style="background: url(./img/test-img.svg ) no-repeat;">
+                    <div class="box-height box-height__500 ffd-column fjc-sb mb-30"
+                         style="background: url(./img/catalog/items/6.png ) no-repeat;">
+                        <div class="catalog__header pt-30 pl-20">
+                            <a href="#!" class="link link-catalog">Шкафы-купе</a>
+                        </div>
+                        <div class="catalog__footer pt-30 pl-20 pb-30">
+                            <a href="#!">
+                                <img src="./img/catalog/ico_arrow.svg" alt="ico_arrow">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 offset-lg-1">
+                    <div class="box-height box-height__500 ffd-column fjc-sb mb-30"
+                         style="background: url(./img/catalog/items/9.png) no-repeat;">
                         <div class="catalog__header pt-30 pl-20">
                             <a href="#!" class="link link-catalog">Шкафы-купе</a>
                         </div>
@@ -225,65 +343,222 @@
                     </div>
                 </div>
 
-            </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="box-height box-height__200 ffd-column fjc-sb mb-30"
+                                 style="background: url(./img/catalog/items/10.png ) no-repeat;">
+                                <div class="catalog__header pt-30 pl-20">
+                                    <a href="#!" class="link link-catalog">Шкафы-купе</a>
+                                </div>
+                                <div class="catalog__footer pt-30 pl-20 pb-30">
+                                    <a href="#!">
+                                        <img src="./img/catalog/ico_arrow.svg" alt="ico_arrow">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
 
+                        <div class="col-lg-6">
+                            <div class="box-height box-height__200 ffd-column fjc-sb mb-30"
+                                 style="background: url(./img/catalog/items/11.png ) no-repeat;">
+                                <div class="catalog__header pt-30 pl-20">
+                                    <a href="#!" class="link link-catalog">Шкафы-купе</a>
+                                </div>
+                                <div class="catalog__footer pt-30 pl-20 pb-30">
+                                    <a href="#!">
+                                        <img src="./img/catalog/ico_arrow.svg" alt="ico_arrow">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="box-height box-height__200 ffd-column fjc-sb mb-30"
+                                 style="background: url(./img/catalog/items/12.png ) no-repeat;">
+                                <div class="catalog__header pt-30 pl-20">
+                                    <a href="#!" class="link link-catalog">Шкафы-купе</a>
+                                </div>
+                                <div class="catalog__footer pt-30 pl-20 pb-30">
+                                    <a href="#!">
+                                        <img src="./img/catalog/ico_arrow.svg" alt="ico_arrow">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="calculate mt-80 pt-30 pb-30">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-8">
-                    <!--<div class="fjc-sb fai-c">-->
-
-                    <div class="row align-items-center">
-                        <div class="col-lg-4">
-                            <h4 class="title title__h4 c-white">
-                                Рассчитать стоимость
-                            </h4>
-                        </div>
-
-                        <div class="col-lg-4">
-                            <div class="pt-10 pb-10">
-                                <input type="text" class="ui__input pl-20 pr-20 pt-5 pb-5" placeholder="Телефон/email">
+    <section class="calculate mt-50 pt-30 pb-30">
+        <form class="form-cost">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <div class="row align-items-center">
+                            <div class="col-lg-4">
+                                <h4 class="title title__h4 c-white">
+                                    Рассчитать стоимость
+                                </h4>
                             </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="pt-10 pb-10">
-                                <input type="hidden" class="pl-20 pr-20 pt-5 pb-5">
-                                <div class="dropdown">
-                                    <div class="fjc-sb fai-c ui__dropdown pr-20 pt-5 pb-5 pl-10 pr-10 c-black dropdown-toggle"
-                                         id="calculate-dropdown" data-toggle="dropdown" aria-haspopup="true"
-                                         aria-expanded="false">
-                                        Тип изделия
-                                    </div>
-                                    <div class="dropdown-menu" aria-labelledby="calculate-dropdown">
-                                        <div class="">
-                                            <a class="fjc-s pt-10 pb-10 pl-10 pr-10 c-black" href="#!">Lorem ipsum.</a>
-                                        </div>
-                                        <div class="">
-                                            <a class="fjc-s pt-10 pb-10 pl-10 pr-10 c-black" href="#!">Lorem ipsum.</a>
-                                        </div>
-                                        <div class="">
-                                            <a class="fjc-s pt-10 pb-10 pl-10 pr-10 c-black" href="#!">Lorem ipsum.</a>
+                            <div class="col-lg-4">
+                                <div class="pt-10 pb-10">
+                                    <input type="text" name="ui-email-cost" class="ui-input pl-20 pr-20 pt-10 pb-10" placeholder="Телефон / email">
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="pt-10 pb-10">
+                                    <div class="ui-select">
+
+                                        <button type="button" class="ui-select__head pt-10 pb-10 pl-10 pr-10 fjc-s">Тип изделия</button>
+
+                                        <div class="ui-select__container">
+                                            <div class="ui-select__option mt-5 mb-5">
+                                                <label for="ui-select__option_1" class="ui-select__item pt-5 pb-5 pl-10 fjc-s c-white">Lorem ipsum - 1</label>
+                                                <input type="radio" name="ui-select-cost" id="ui-select__option_1" value="1">
+                                            </div>
+                                            <div class="ui-select__option mt-5 mb-5">
+                                                <label for="ui-select__option_2" class="ui-select__item pt-5 pb-5 pl-10 fjc-s c-white">Lorem ipsum - 2</label>
+                                                <input type="radio" name="ui-select-cost" id="ui-select__option_2" value="2">
+                                            </div>
+                                            <div class="ui-select__option mt-5 mb-5">
+                                                <label for="ui-select__option_3" class="ui-select__item pt-5 pb-5 pl-10 fjc-s c-white">Lorem ipsum - 3</label>
+                                                <input type="radio" name="ui-select-cost" id="ui-select__option_3" value="3">
+                                            </div>
+                                            <div class="ui-select__option mt-5 mb-5">
+                                                <label for="ui-select__option_4" class="ui-select__item pt-5 pb-5 pl-10 fjc-s c-white">Lorem ipsum - 4</label>
+                                                <input type="radio" name="ui-select-cost" id="ui-select__option_4" value="4">
+                                            </div>
+                                            <div class="ui-select__option mt-5 mb-5">
+                                                <label for="ui-select__option_5" class="ui-select__item pt-5 pb-5 pl-10 fjc-s c-white">Lorem ipsum - 5</label>
+                                                <input type="radio" name="ui-select-cost" id="ui-select__option_5" value="5">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
 
+                    <div class="col-lg-4">
+                        <div class="fjc-sb pl-20">
+                            <a href="#!" class="fjc-sa fai-c">
+                                <img src="./img/calculate/ico_add.svg" alt="ico_add">
+                                <div class="pl-10 c-blue title__h5">Прикрепить проект</div>
+                            </a>
+                            <div>
+                                <div class="button button__red fjc-c fai-c pt-10 pb-10 pl-40 pr-40">
+                                    Отправить
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                    <!--</div>-->
                 </div>
-                <div class="col-lg-4">
-                    <div class="fjc-sb pl-20">
-                        <a href="#!" class="fjc-sa fai-c">
-                            <img src="./img/calculate/ico_add.svg" alt="ico_add">
-                            <div class="pl-10 c-blue title__h5">Прикрепить проект</div>
-                        </a>
-                        <div>
+            </div>
+        </form>
+    </section>
+
+    <section class="contacts mt-90">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-11 offset-lg-1">
+                    <div>
+                        <h2 class="title title__h1 c-red mb-30">Контакты</h2>
+                    </div>
+                </div>
+                <div class="col-lg-4 offset-lg-1">
+                    <div>
+                        <ul class="ui-ul">
+                            <li class="mb-20 fs-14 c-black">
+                                г. Белгород, ул. 50-ти летия
+                                Белгородской
+                                области
+                                (Чернышевского), 6
+                            </li>
+                            <li class="mb-20 fs-14 c-black">
+                                г. Белгород, ул. Щорса 64
+                                ТРЦ Сити Молл
+                                "Белгородский",
+                                белое крыло, цокольный этаж
+                            </li>
+                            <li class="mb-20 fs-14 c-black">
+                                г. Белгород, ул. Есенина, д. 8
+                                (салон мебели)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+
+                    <div class="row">
+                        <div class="col-lg-12 col-md-4 col-sm-4 col-xs-12 mb-40">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div><a href="tel:+74722373543" class="fs-14 c-blue fw-700">8 (4722) 373-543</a></div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="desc desc__sm">Почта онлайн заказов</div>
+                                </div>
+                                <div class="col-lg-2">
+                                    <div><a href="mailto:online@dshkaf.ru" class="fs-14 c-blue fw-700">online@dshkaf.ru</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-4 col-sm-4 col-xs-12 mb-40">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div><a href="tel:+74722375505" class="fs-14 c-blue fw-700">8 (4722) 375-505</a></div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="desc desc__sm">Задавайте вопросы по адресу</div>
+                                </div>
+
+                                <div class="col-lg-2">
+                                    <div><a href="mailto:info@dshkaf.ru" class="fs-14 c-blue fw-700">info@dshkaf.ru</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-4 col-sm-4 col-xs-12 mb-40">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div><a href="tel:+74722582888" class="fs-14 c-blue fw-700">8 (4722) 582-888</a></div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="desc desc__sm">Почта онлайн заказов</div>
+                                </div>
+                                <div class="col-lg-2">
+                                    <div><a href="#!" class="fs-14 c-blue fw-700">@account</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row mt-60">
+                <div class="col-lg-8 bg-white offset-lg-2 br-1-yellow pb-30">
+                    <div class="mt-30">
+                        <div class="fjc-c fai-c ffd-column">
+                            <h3 class="title title__h1 c-black mb-10">У вас остались вопросы?</h3>
+                            <div class="desc desc__sm mb-30 c-black">
+                                Менеджер ответит на Ваш вопрос в ближайшее время
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-7 offset-lg-1">
+                            <input type="text" class="br-1-yellow ui-input pt-10 pb-10 pl-30 c-black mb-30" placeholder="Телефон / email">
+                        </div>
+                        <div class="col-lg-3">
                             <div class="button button__red fjc-c fai-c pt-10 pb-10 pl-40 pr-40">
                                 Отправить
                             </div>
@@ -291,14 +566,100 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
 
-    <footer>
+    <footer class="footer pb-60">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3 offset-lg-1">
+                    <ul class="ui-ul">
+                        <li class="mb-10">
+                            <a href="#!" class="c-white fs-14">Главная</a>
+                        </li>
+                        <li class="mb-10">
+                            <a href="#!" class="c-white fs-14">Шкафы-купе</a>
+                        </li>
+                        <li class="mb-10">
+                            <a href="#!" class="c-white fs-14">Прихожие</a>
+                        </li>
+                        <li class="mb-10">
+                            <a href="#!" class="c-white fs-14">Комоды</a>
+                        </li>
+                        <li class="mb-10">
+                            <a href="#!" class="c-white fs-14">Кухни</a>
+                        </li>
+                        <li class="mb-10">
+                            <a href="#!" class="c-white fs-14">Межкомнатные перегородки</a>
+                        </li>
+                        <li class="mb-10">
+                            <a href="#!" class="c-white fs-14">Гардеробные комнаты</a>
+                        </li>
+                    </ul>
+                </div>
 
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                    <ul class="ui-ul">
+                        <li class="mb-10">
+                            <a href="#!" class="c-white fs-14">Шкафы распашные</a>
+                        </li>
+                        <li class="mb-10">
+                            <a href="#!" class="c-white fs-14">Домашнее рабочее место</a>
+                        </li>
+                        <li class="mb-10">
+                            <a href="#!" class="c-white fs-14">Детские</a>
+                        </li>
+                        <li class="mb-10">
+                            <a href="#!" class="c-white fs-14">Гостиные</a>
+                        </li>
+                        <li class="mb-10">
+                            <a href="#!" class="c-white fs-14">Библиотеки</a>
+                        </li>
+                        <li class="mb-10">
+                            <a href="#!" class="c-white fs-14">Готовые решения</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-2 col-sm-2">
+                    <ul class="ui-ul">
+                        <li class="mb-10">
+                            <a href="#!" class="c-white fs-14">О нас</a>
+                        </li>
+                        <li class="mb-10">
+                            <a href="#!" class="c-white fs-14">Партнеры</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-2 col-sm-2">
+                    <ul class="ui-ul">
+                        <li class="mb-10">
+                            <a href="#!" class="c-white fs-14">
+                                <img src="./img/icons/footer/ico_vk.svg" alt="ico_vk">
+                                Вконтакте
+                            </a>
+                        </li>
+                        <li class="mb-10">
+                            <a href="#!" class="c-white fs-14">
+                                <img src="./img/icons/footer/ico_insta.svg" alt="ico_insta">
+                                Инстаграм
+                            </a>
+                        </li>
+                        <li class="mb-10">
+                            <a href="#!" class="c-white fs-14">
+                                <img src="./img/icons/footer/ico_mail.svg" alt="ico_mail">
+                                Почта
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </footer>
 
-</div>
+</main>
 
 
 <script src="./js/main.js"></script>
