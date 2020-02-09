@@ -4,13 +4,32 @@
 
   &__footer {
 
-    img {
+    &:hover {
 
-      @media (max-width: 991px) and (min-width: 769px) {
-        width: 30px !important;
-      }
-      @media (max-width: 768px) and (min-width: 360px) {
-        width: 30px !important;
+    }
+  }
+
+  .arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border: 1px solid #cbc0b1;
+    border-radius: 5em;
+    transition: all .3s ease-in-out;
+
+    img {
+      transition: all .3s ease-in-out;
+    }
+
+    &:hover {
+      opacity: 0.8;
+
+
+      img {
+        transform: translateX(5px);
       }
     }
   }
