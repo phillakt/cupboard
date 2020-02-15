@@ -38,6 +38,9 @@
   }
 
   &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     position: absolute;
     background: $c-black;
     width: 100%;
@@ -60,9 +63,9 @@
       box-shadow: $c-white;
     }
 
-    &_view {
-      height: 170px;
-    }
+    // &_view {
+    //   height: 240px;
+    // }
   }
 
   &__option {
@@ -77,9 +80,14 @@
     display: flex;
     cursor: pointer;
     width: 100%;
+
+    @media (max-width: 992px) and (min-width: 360px) {
+      padding: 10px !important;
+    }
   }
 
   &__item {
+      margin: 0;
       transition: all .3s ease-in-out;
 
     &:hover {
@@ -236,6 +244,10 @@
 
 .br-1-yellow {
   border: 1px solid #E8DCCC;
+}
+
+.br-1-black {
+  border: 1px solid $c-black;
 }
 
 .bg-white {

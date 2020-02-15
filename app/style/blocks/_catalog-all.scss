@@ -1,0 +1,17 @@
+
+.catalog-all {
+
+    .bg-line {
+        // background: url(../../img/catalog/full-catalog/catalog-bg-line.svg);
+        // background-position: 100%;
+        // background-size: contain;
+
+        @media (max-width: 991px) and (min-width: 360px) {
+            background: none;
+          }
+    }
+
+    .col-lg-10.offset-lg-1 {
+        margin-bottom: 60px;
+    }
+}

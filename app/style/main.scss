@@ -27,6 +27,8 @@ $f-ubuntu: 'Ubuntu', sans-serif;
 @import 'blocks/catalog';
 @import 'blocks/contacts';
 @import 'blocks/desc';
+@import 'blocks/catalog-all';
+@import 'blocks/breadcrumbs';
 
 
 body {
@@ -35,29 +37,30 @@ body {
     color: $c-black;
 }
 
-body::-webkit-scrollbar {
-    width: 0.3em;
-    background: rgb(255, 255, 255);
-}
+// body::-webkit-scrollbar {
+//     width: 0.3em;
+//     background: rgb(255, 255, 255);
+// }
 
-body::-webkit-scrollbar-thumb {
-    background-color: $c-black;
-    outline: white solid 1px;
-}
+// body::-webkit-scrollbar-thumb {
+//     background-color: $c-black;
+//     outline: white solid 1px;
+// }
 
-body::-webkit-scrollbar-track {
-    box-shadow: rgba(0, 0, 0, 0.3) 0 0 6px inset;
-}
+// body::-webkit-scrollbar-track {
+//     box-shadow: rgba(0, 0, 0, 0.3) 0 0 6px inset;
+// }
 
-::selection {
-    background: $c-black;
-    color: #fff;
-}
+// ::selection {
+//     background: $c-black;
+//     color: #fff;
+// }
 
 #app {
 
 
     @media (max-width: 992px) and (min-width: 360px){
         position: relative;
+        margin-top: 30px;
     }
 }

@@ -6,6 +6,8 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify'), //Минификация Js
     imagemin = require('gulp-imagemin'), //Минификация Img
     browserSync = require('browser-sync').create(); //Авто презагрузка браузера
+    
+var plumber = require('gulp-plumber');
 
 gulp.task('sass', function () {
     gulp.src([
@@ -14,6 +16,7 @@ gulp.task('sass', function () {
         './node_modules/owl.carousel/dist/assets/owl.carousel.css',
         './node_modules/owl.carousel/dist/assets/owl.theme.default.css',
         './app/style/main.scss'])
+        .pipe(plumber())
         .pipe(sass())
         // .pipe(csso())
         .pipe(concat('main.css'))
@@ -27,6 +30,7 @@ gulp.task('js', function () {
         // './node_modules/swiper/dist/js/swiper.min.js',
         './node_modules/owl.carousel/dist/owl.carousel.js',
         './app/js/*.js'])
+        .pipe(plumber())
         .pipe(concat('main.js'))
         // .pipe(uglify())
         .pipe(gulp.dest('./dist/js/'))
@@ -34,6 +38,7 @@ gulp.task('js', function () {
 
 gulp.task('img', function () {
     gulp.src('./app/img/**/**/*')
+        .pipe(plumber())
         .pipe(imagemin())
         .pipe(gulp.dest('./dist/img/'))
 });
@@ -47,7 +52,7 @@ gulp.task('serve', function() {
 
 gulp.task('watch', function () {
     gulp.watch('./app/style/**/*.scss', ['sass']).on('change', browserSync.reload);
-    gulp.watch('./app/js/**/*.js', ['js']);
+    gulp.watch('./app/js/**/*.js', ['js']).on('change', browserSync.reload);
     gulp.watch('./app/img/**/*', ['img']);
     gulp.watch('./dist/*.html').on('change', browserSync.reload);
 });

@@ -7727,8 +7727,8 @@ a.text-dark:focus, a.text-dark:hover {
     font-size: 12px; }
 
 .button {
-  display: flex;
   cursor: pointer;
+  display: flex;
   width: 100%;
   border-radius: 5px;
   transition: all 0.3s ease-in-out; }
@@ -7747,12 +7747,6 @@ button {
 
 .mb-10 {
   margin-bottom: 10px !important; }
-  @media (max-width: 991px) and (min-width: 769px) {
-    .mb-10 {
-      margin-bottom: calc(10px / 2) !important; } }
-  @media (max-width: 768px) and (min-width: 360px) {
-    .mb-10 {
-      margin-bottom: calc(10px / 2) !important; } }
 
 .mb-20 {
   margin-bottom: 20px !important; }
@@ -7840,12 +7834,6 @@ button {
 
 .mt-10 {
   margin-top: 10px !important; }
-  @media (max-width: 991px) and (min-width: 769px) {
-    .mt-10 {
-      margin-top: calc(10px / 2) !important; } }
-  @media (max-width: 768px) and (min-width: 360px) {
-    .mt-10 {
-      margin-top: calc(10px / 2) !important; } }
 
 .mt-20 {
   margin-top: 20px !important; }
@@ -7933,12 +7921,6 @@ button {
 
 .pb-10 {
   padding-bottom: 10px !important; }
-  @media (max-width: 991px) and (min-width: 769px) {
-    .pb-10 {
-      padding-bottom: calc(10px / 2) !important; } }
-  @media (max-width: 768px) and (min-width: 360px) {
-    .pb-10 {
-      padding-bottom: calc(10px / 2) !important; } }
 
 .pb-20 {
   padding-bottom: 20px !important; }
@@ -8026,12 +8008,6 @@ button {
 
 .pt-10 {
   padding-top: 10px !important; }
-  @media (max-width: 991px) and (min-width: 769px) {
-    .pt-10 {
-      padding-top: calc(10px / 2) !important; } }
-  @media (max-width: 768px) and (min-width: 360px) {
-    .pt-10 {
-      padding-top: calc(10px / 2) !important; } }
 
 .pt-20 {
   padding-top: 20px !important; }
@@ -8119,12 +8095,6 @@ button {
 
 .pl-10 {
   padding-left: 10px !important; }
-  @media (max-width: 991px) and (min-width: 769px) {
-    .pl-10 {
-      padding-left: calc(10px / 2) !important; } }
-  @media (max-width: 768px) and (min-width: 360px) {
-    .pl-10 {
-      padding-left: calc(10px / 2) !important; } }
 
 .pl-20 {
   padding-left: 20px !important; }
@@ -8176,12 +8146,6 @@ button {
 
 .pr-10 {
   padding-right: 10px !important; }
-  @media (max-width: 991px) and (min-width: 769px) {
-    .pr-10 {
-      padding-right: calc(10px / 2) !important; } }
-  @media (max-width: 768px) and (min-width: 360px) {
-    .pr-10 {
-      padding-right: calc(10px / 2) !important; } }
 
 .pr-30 {
   padding-right: 30px !important; }
@@ -8224,12 +8188,6 @@ button {
 
 .ml-10 {
   margin-left: 10px !important; }
-  @media (max-width: 991px) and (min-width: 769px) {
-    .ml-10 {
-      margin-left: calc(10px / 2) !important; } }
-  @media (max-width: 768px) and (min-width: 360px) {
-    .ml-10 {
-      margin-left: calc(10px / 2) !important; } }
 
 .ml-20 {
   margin-left: 20px !important; }
@@ -8281,12 +8239,6 @@ button {
 
 .mr-10 {
   margin-right: 10px !important; }
-  @media (max-width: 991px) and (min-width: 769px) {
-    .mr-10 {
-      margin-right: calc(10px / 2) !important; } }
-  @media (max-width: 768px) and (min-width: 360px) {
-    .mr-10 {
-      margin-right: calc(10px / 2) !important; } }
 
 .mr-20 {
   margin-right: 20px !important; }
@@ -8423,6 +8375,9 @@ button {
 .menu-sticky-view {
   top: 0;
   transition: all 0.3s !important; }
+
+.menu .sticky-search, .menu .sticky-logo, .menu .sticky-drop-hamburger {
+  width: 33%; }
 
 .menu-drop {
   position: absolute;
@@ -8588,19 +8543,20 @@ button {
     background: rgba(55, 51, 52, 0.9);
     z-index: 998;
     transition: all .3s ease-in-out;
-    right: -100%; }
+    right: -100%;
+    top: 0; }
   .btn-mobile-menu {
     display: flex;
-    right: 15px;
-    top: 15px;
-    width: 30px;
+    width: 100%;
     height: 30px;
     background: #373334;
     color: #fff;
     align-items: center;
     justify-content: center;
     position: fixed;
-    z-index: 997; } }
+    top: 0;
+    z-index: 997;
+    transition: all .3s ease-in-out; } }
 
 .visible-block {
   right: 0%; }
@@ -8702,13 +8658,16 @@ button {
 
 .box-height {
   width: 100%; }
+  .box-height-overflow-h {
+    overflow: hidden; }
   .box-height__500 {
     height: 540px;
-    background-size: 100% !important;
+    background-size: cover !important;
+    background-position: bottom !important;
     transition: all .3s ease-in-out !important; }
     .box-height__500:hover {
       transition: all .3s ease-in-out !important;
-      background-size: 105% !important; }
+      transform: scale(1.1); }
     @media (max-width: 1200px) and (min-width: 992px) {
       .box-height__500 {
         background-size: cover !important;
@@ -8721,13 +8680,54 @@ button {
       .box-height__500 {
         background-size: cover !important;
         height: calc(300px / 2) !important; } }
-  .box-height__200 {
+  .box-height__350 {
+    height: 350px;
+    background-size: cover !important;
+    background-position: bottom !important;
+    transition: all .3s ease-in-out !important; }
+    .box-height__350:hover {
+      transition: all .3s ease-in-out !important;
+      transform: scale(1.1); }
+    @media (max-width: 1200px) and (min-width: 992px) {
+      .box-height__350 {
+        background-size: cover !important;
+        height: calc(350px / 2) !important; } }
+    @media (max-width: 991px) and (min-width: 769px) {
+      .box-height__350 {
+        background-size: cover !important;
+        height: calc(350px / 2) !important; } }
+    @media (max-width: 768px) and (min-width: 360px) {
+      .box-height__350 {
+        background-size: cover !important;
+        height: calc(350px / 2) !important; } }
+  .box-height__255 {
     height: 255px;
-    background-size: 100% !important;
+    background-size: cover !important;
+    background-position: bottom !important;
+    transition: all .3s ease-in-out !important; }
+    .box-height__255:hover {
+      transition: all .3s ease-in-out !important;
+      transform: scale(1.1); }
+    @media (max-width: 1200px) and (min-width: 992px) {
+      .box-height__255 {
+        background-size: cover !important;
+        height: calc(255px / 2) !important; } }
+    @media (max-width: 991px) and (min-width: 769px) {
+      .box-height__255 {
+        background-size: cover !important;
+        height: calc(300px / 2) !important; } }
+    @media (max-width: 768px) and (min-width: 360px) {
+      .box-height__255 {
+        background-size: cover !important;
+        height: calc(300px / 2) !important; } }
+  .box-height__200 {
+    height: 200px;
+    background-size: cover !important;
+    background-position: bottom !important;
     transition: all .3s ease-in-out !important; }
     .box-height__200:hover {
       transition: all .3s ease-in-out !important;
-      background-size: 105% !important; }
+      transform: scale(1.1); }
     @media (max-width: 1200px) and (min-width: 992px) {
       .box-height__200 {
         background-size: cover !important;
@@ -8773,6 +8773,9 @@ button {
       border-top: 6px solid #373334;
       transition: all .3s ease-in-out; }
   .ui-select__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     position: absolute;
     background: #373334;
     width: 100%;
@@ -8788,15 +8791,17 @@ button {
       outline: #fff solid 1px; }
     .ui-select__container::-webkit-scrollbar-track {
       box-shadow: #fff; }
-    .ui-select__container_view {
-      height: 170px; }
   .ui-select__option input {
     display: none; }
   .ui-select label {
     display: flex;
     cursor: pointer;
     width: 100%; }
+    @media (max-width: 992px) and (min-width: 360px) {
+      .ui-select label {
+        padding: 10px !important; } }
   .ui-select__item {
+    margin: 0;
     transition: all .3s ease-in-out; }
     .ui-select__item:hover {
       color: #fff;
@@ -8900,6 +8905,9 @@ button {
 .br-1-yellow {
   border: 1px solid #E8DCCC; }
 
+.br-1-black {
+  border: 1px solid #373334; }
+
 .bg-white {
   background: #fff; }
 
@@ -8930,25 +8938,23 @@ button {
 .desc__sm {
   font-size: 14px; }
 
+@media (max-width: 991px) and (min-width: 360px) {
+  .catalog-all .bg-line {
+    background: none; } }
+
+.catalog-all .col-lg-10.offset-lg-1 {
+  margin-bottom: 60px; }
+
+.breadcrumbs {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
 body {
   background: #fff;
   color: #373334; }
 
-body::-webkit-scrollbar {
-  width: 0.3em;
-  background: white; }
-
-body::-webkit-scrollbar-thumb {
-  background-color: #373334;
-  outline: white solid 1px; }
-
-body::-webkit-scrollbar-track {
-  box-shadow: rgba(0, 0, 0, 0.3) 0 0 6px inset; }
-
-::selection {
-  background: #373334;
-  color: #fff; }
-
 @media (max-width: 992px) and (min-width: 360px) {
   #app {
-    position: relative; } }
+    position: relative;
+    margin-top: 30px; } }
