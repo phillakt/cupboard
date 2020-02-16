@@ -1,0 +1,30 @@
+
+
+.products {
+
+    .products-card {
+
+        .mt-100 {
+            @media (max-width: 1200px) and (min-width: 300px) {
+                margin-top: 0 !important;
+              }
+        }
+
+        .products-card__column {
+            @media (max-width: 991px) and (min-width: 300px) {
+                flex-direction: column;
+              }
+        }
+    }
+
+    .products-line {
+        background: url(../../img/products/line.svg) no-repeat;
+        height: 1px;
+        background-size: contain;
+
+        .button {
+            margin-top: -20px;
+        }
+    }
+}
+

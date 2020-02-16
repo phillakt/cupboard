@@ -3,4 +3,8 @@
   padding-top: 160px;
   margin-top: -60px;
   background: #373334;
+
+  @media (max-width: 768px) and (min-width: 300px) {
+    padding-top: 90px;
+  }
 }

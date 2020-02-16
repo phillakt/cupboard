@@ -7,6 +7,11 @@ $(document).ready(function () {
         margin: 0,
         nav: true,
         navText: [],
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        fluidSpeed: 500,
+        smartSpeed: 1000,
         responsive: {
             0: {
                 items: 1
@@ -21,6 +26,33 @@ $(document).ready(function () {
     });
 
     // Main-slider end
+
+
+    //  Card item
+
+      var galleryThumbs = new Swiper('.gallery-thumbs', {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+      });
+
+      var galleryTop = new Swiper('.gallery-top', {
+        spaceBetween: 10,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        thumbs: {
+          swiper: galleryThumbs
+        }
+      });
+
+    //  Card item end
+
+
+
 
     function toogleSearch() {
         $('.box-search').hasClass('display-none') ? $('.box-search').removeClass('display-none') : $('.box-search').addClass('display-none');

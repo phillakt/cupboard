@@ -1,10 +1,16 @@
 
 .desc {
-
+  text-align: justify;
+  
   &__lg {}
-  &__md {}
+  &__md {
+    
+  }
   &__sm {
     font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    color: $c-black;
   }
   &__xs {}
 }

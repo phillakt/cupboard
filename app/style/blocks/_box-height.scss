@@ -6,6 +6,34 @@
     overflow: hidden;
   }
 
+  &__675 {
+    height: 675px;
+    background-size: cover !important;
+    background-position: bottom !important;
+    transition: all .3s ease-in-out !important;
+
+    &:hover {
+      transition: all .3s ease-in-out !important;
+      transform: scale(1.1)
+    }
+
+    @media (max-width: 1200px) and (min-width: 992px) {
+      background-size: cover !important;
+      height: calc(705px / 2) !important;
+    }
+
+    @media (max-width: 991px) and (min-width: 769px) {
+      background-size: cover !important;
+      height: calc(300px / 2) !important;
+    }
+
+    @media (max-width: 768px) and (min-width: 300px) {
+      background-size: cover !important;
+      height: calc(300px / 2) !important;
+    }
+  }
+
+
   &__500 {
     height: 540px;
     background-size: cover !important;
@@ -26,7 +54,7 @@
       background-size: cover !important;
       height: calc(300px / 2) !important;
     }
-    @media (max-width: 768px) and (min-width: 360px) {
+    @media (max-width: 768px) and (min-width: 300px) {
       background-size: cover !important;
       height: calc(300px / 2) !important;
     }
@@ -52,7 +80,7 @@
       background-size: cover !important;
       height: calc(350px / 2) !important;
     }
-    @media (max-width: 768px) and (min-width: 360px) {
+    @media (max-width: 768px) and (min-width: 300px) {
       background-size: cover !important;
       height: calc(350px / 2) !important;
     }
@@ -78,7 +106,7 @@
       background-size: cover !important;
       height: calc(300px / 2) !important;
     }
-    @media (max-width: 768px) and (min-width: 360px) {
+    @media (max-width: 768px) and (min-width: 300px) {
       background-size: cover !important;
       height: calc(300px / 2) !important;
     }
@@ -107,7 +135,7 @@
       height: calc(300px / 2) !important;
     }
     
-    @media (max-width: 768px) and (min-width: 360px) {
+    @media (max-width: 768px) and (min-width: 300px) {
       background-size: cover !important;
       height: calc(300px / 2) !important;
     }

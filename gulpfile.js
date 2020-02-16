@@ -12,7 +12,7 @@ var plumber = require('gulp-plumber');
 gulp.task('sass', function () {
     gulp.src([
         './node_modules/bootstrap/dist/css/bootstrap.min.css',
-        // './node_modules/swiper/dist/css/swiper.min.css',
+        './node_modules/swiper/dist/css/swiper.min.css',
         './node_modules/owl.carousel/dist/assets/owl.carousel.css',
         './node_modules/owl.carousel/dist/assets/owl.theme.default.css',
         './app/style/main.scss'])
@@ -27,7 +27,7 @@ gulp.task('js', function () {
     gulp.src([
         './node_modules/jquery/dist/jquery.js',
         './node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
-        // './node_modules/swiper/dist/js/swiper.min.js',
+        './node_modules/swiper/dist/js/swiper.min.js',
         './node_modules/owl.carousel/dist/owl.carousel.js',
         './app/js/*.js'])
         .pipe(plumber())

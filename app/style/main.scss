@@ -29,6 +29,9 @@ $f-ubuntu: 'Ubuntu', sans-serif;
 @import 'blocks/desc';
 @import 'blocks/catalog-all';
 @import 'blocks/breadcrumbs';
+@import 'blocks/products';
+@import 'blocks/stock';
+@import 'blocks/card';
 
 
 body {
@@ -59,7 +62,7 @@ body {
 #app {
 
 
-    @media (max-width: 992px) and (min-width: 360px){
+    @media (max-width: 992px) and (min-width: 300px){
         position: relative;
         margin-top: 30px;
     }
